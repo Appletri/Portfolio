@@ -1,7 +1,11 @@
+:root {
+ /* Colors */
+  --main-color: rgb(31, 221, 174);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -14,13 +18,22 @@
   align-items: center;
 }
 
+.banner-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .banner {
   position: absolute;
   top: 0;
   left: 0;
   width: 150vw;
   height: 450px;
-  background-color: aquamarine;
+  background-color: var(--main-color);
   z-index: -1;
   transform: skew(-45deg) translateX(-55vw)
 }
@@ -78,10 +91,11 @@
 
 .portfolio {
   text-align: left;
-  width: 100vw;
+  width: 100%;
 }
 
 .portfolio h1 {
+  margin-left: 30px;
   font-size: 2rem;
 }
 
@@ -96,13 +110,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
+  min-width: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
 }
 
-.work .project-image {
-  border: 1px solid white;
+.work .img-container {
+  width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 1s ease-out;
 }
+
+.work .img-container:hover {
+  height: 100%;
+}
+
+.work .project-image, .project-gif {
+  max-width: 100%;
+}
+
 
 .work .about-work {
   background-color: white;
@@ -113,6 +142,7 @@
 .work .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .work h2 {
@@ -126,4 +156,30 @@
 .header img {
   width: 25px;
   height: 25px;
+}
+
+/* Contact */
+
+.contact {
+  background-color: var(--main-color);
+  width: 100%;
+  height: auto;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.contact h1 {
+  font-size: 2rem;
+}
+
+.contact .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
 }

@@ -1,10 +1,23 @@
 import Icon from '@mdi/react';
 import { mdiOpenInNew } from '@mdi/js';
+import { useState } from 'react';
 
-function Work({title, image, github, project, des}) {
+function Work({title, image, gif, github, project, des}) {
+  const [showGif, setShowGif] = useState(false);
+
+  function MouseOver(event) {
+    setShowGif(true);
+  };
+
+  function MouseOut(event) {
+    setShowGif(false);
+  };
+
   return (
     <div className="work">
-      <img className='project-image' src={image} alt=''></img>
+      <div className='img-container' onMouseOver={MouseOver} onMouseOut={MouseOut}>
+        {showGif ? <img className='project-gif' src={gif} alt=''></img> : <img className='project-image' src={image} alt=''></img>}
+      </div>
       <div className="about-work">
         <div className="header">
           <h2>{title}</h2>
