@@ -6,7 +6,9 @@ function Work({title, image, gif, github, project, des}) {
   const [showGif, setShowGif] = useState(false);
 
   function MouseOver(event) {
-    setShowGif(true);
+    if (gif) {
+      setShowGif(true);
+    }
   };
 
   function MouseOut(event) {
@@ -14,19 +16,21 @@ function Work({title, image, gif, github, project, des}) {
   };
 
   return (
-    <div className="work">
-      <div className='img-container' onMouseOver={MouseOver} onMouseOut={MouseOut}>
+    <div className="work" onMouseOver={MouseOver} onMouseOut={MouseOut}>
+      <div className='img-container'>
         {showGif ? <img className='project-gif' src={gif} alt=''></img> : <img className='project-image' src={image} alt=''></img>}
       </div>
       <div className="about-work">
         <div className="header">
           <h2>{title}</h2>
           <div className="links">
+            {github ? 
             <a href={github} target='_blank'>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-            </a>
+            </a> : null}
             <a href={project} target='_blank'>
-              <Icon path={mdiOpenInNew} size={1} color='black'/>
+              {project ? <Icon path={mdiOpenInNew} size={1} color='black'/>:
+              <Icon path={mdiOpenInNew} size={1} color='lightgrey'/>}
             </a>
           </div>
         </div>

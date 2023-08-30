@@ -109,27 +109,27 @@
 .work {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   min-width: 100px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.562); */
 }
 
 .work .img-container {
-  width: 30vw;
+  width: 100%;
   height: 30vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   transition: height 1s ease-out;
 }
 
-.work .img-container:hover {
+.work:hover .img-container{
   height: 100%;
 }
 
 .work .project-image, .project-gif {
-  max-width: 100%;
+  width: 100%;
 }
 
 
