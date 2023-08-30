@@ -17,26 +17,6 @@
   align-items: center;
 }
 
-.banner-container {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150vw;
-  height: 450px;
-  background-color: var(--main-color);
-  z-index: -1;
-  transform: skew(-45deg) translateX(-55vw)
-}
-
 .links img{
   width: 30px;
   height: 30px;
@@ -45,7 +25,29 @@
 
 /* Intro */
 
-.intro {
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvas {
+  position: absolute;
+  
+}
+
+.heading {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+/* About Me   */
+.about-me {
+  position: relative;
+  align-self: center;
+  justify-self: center;
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -66,7 +68,7 @@
   transform: translate(-32%, -7%)
 }
 
-.about-me {
+.about-section {
   background-color: white;
   text-align: left;
   color: black;
@@ -100,6 +102,7 @@
 
 .works {
   display: grid;
+  max-width: 1280px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 30px;
@@ -116,17 +119,17 @@
 
 .work .img-container {
   width: 100%;
-  height: 30vw;
+  max-height: 393px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: start;
-  transition: height 1s ease-out;
+  transition: max-height 1s ease-out;
   background-color: #242424;
 }
 
 .work:hover .img-container{
-  height: 100%;
+  max-height: 100%;
 }
 
 .work .project-image, .project-gif {

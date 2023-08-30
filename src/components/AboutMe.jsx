@@ -1,11 +1,11 @@
 import pic from '../assets/profile.jpg'
 function AboutMe() {
   return (
-    <div className="intro">
+    <div className="about-me">
       <div className="profile">
         <img src={pic} alt="Profile picture of Tri Lam"></img>
       </div>
-      <div className="about-me">
+      <div className="about-section">
         <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus sint totam, voluptates culpa numquam libero nesciunt, explicabo, iure doloribus eos natus? Beatae totam, fugit id labore aspernatur voluptates pariatur?</p>
         <div className="links">
