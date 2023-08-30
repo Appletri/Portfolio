@@ -10,7 +10,6 @@
 }
 
 .App {
-  width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -111,6 +110,7 @@
   flex-direction: column;
   justify-content: start;
   min-width: 100px;
+  background-color: white;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.562); */
 }
 
@@ -122,6 +122,7 @@
   justify-content: center;
   align-items: start;
   transition: height 1s ease-out;
+  background-color: #242424;
 }
 
 .work:hover .img-container{

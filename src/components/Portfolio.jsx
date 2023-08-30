@@ -3,6 +3,7 @@ import shopGif from "../assets/gifs/shopping-cart.gif"
 import inventoryGif from "../assets/gifs/inventory-app.gif"
 import cvGif from "../assets/gifs/cv-application.gif"
 import UXPic from "../assets/UX.png"
+import chessPic from "../assets/chess.png"
 
 function Portfolio() {
   const portfolio = [
@@ -12,7 +13,7 @@ function Portfolio() {
       gif: shopGif,
       github: 'https://github.com/Appletri/shopping-cart',
       project: 'https://appletri.github.io/shopping-cart/',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
+      des: 'The front-end application built with ReactJS for a non-profit organization merchandise.'
     },
     {
       title: 'Inventory App',
@@ -20,7 +21,7 @@ function Portfolio() {
       gif: inventoryGif,
       github: 'https://github.com/Appletri/inventory-app',
       project: null,
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
+      des: 'This project is a full stack application utilizing ReactJS, MongoDB, and Express. The goal of this assignment is to create mini inventory CRUD app. I turned mine into a game where users can create their own unique items for everyone to see. '
     },
     {
       title: 'Resume Builder',
@@ -28,7 +29,7 @@ function Portfolio() {
       gif: cvGif,
       github: 'https://github.com/Appletri/cv-application',
       project: 'https://appletri.github.io/cv-application/',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
+      des: 'An application that helps the user build their resume. This is the first project for ReactJS. I learned how to make basic components, utilizing state and props. Later down the curriculum, I was tasked with swapping out the class components with hooks. '
     },
     {
       title: 'UX Designer Portfolio',
@@ -36,23 +37,15 @@ function Portfolio() {
       gif: null,
       github: null,
       project: 'https://appletri.github.io/cindys-website/',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
+      des: 'This is a UX designer portfolio built with ReactJS.'
     },
     {
-      title: 'UX Designer Portfolio',
-      image: UXPic,
+      title: 'Knight Travils',
+      image: chessPic,
       gif: null,
-      github: null,
-      project: 'https://appletri.github.io/cindys-website/',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
-    },
-    {
-      title: 'UX Designer Portfolio',
-      image: UXPic,
-      gif: null,
-      github: null,
-      project: 'https://appletri.github.io/cindys-website/',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio voluptatibus quibusdam facere repellat quos nam pariatur, molestias veniam rerum tempora aperiam nihil, officiis molestiae. Libero illo accusamus perspiciatis magnam?'
+      github: 'https://github.com/Appletri/knight-travails',
+      project: 'https://appletri.github.io/knight-travails/',
+      des: 'Knight Travils is a project that explores the graph data structure. The app will find a path containing the shortest amount of moves for a knight to move from point A to point B in chess.'
     },
   ]
   return(
