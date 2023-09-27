@@ -54,6 +54,7 @@
   margin: 2rem;
   margin-bottom: 30vh;
 }
+
 .profile {
   display: block;
   position: relative;
@@ -88,6 +89,36 @@
   text-align: right;
 }
 
+/* Tech Stack */
+.techstack h1 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.techstack-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-bottom: 50px;
+}
+
+.techstack-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  gap: 20px;
+}
+
+.techstack-item img {
+  width: 100px;
+  height: 100px;
+}
+#express {
+  filter: invert(100%);
+}
+
 /* Portfolio */
 
 .portfolio {
@@ -114,6 +145,7 @@
   justify-content: start;
   min-width: 100px;
   background-color: white;
+  transition: 1s ease-out;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.562); */
 }
 

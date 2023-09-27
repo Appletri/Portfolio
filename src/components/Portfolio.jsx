@@ -32,6 +32,14 @@ function Portfolio() {
       des: 'An application that helps the user build their resume. This is the first project for ReactJS. I learned how to make basic components, utilizing state and props. Later down the curriculum, I was tasked with swapping out the class components with hooks. '
     },
     {
+      title: 'Personal Website',
+      image: UXPic,
+      gif: null,
+      github: null,
+      project: 'https://github.com/Appletri/Portfolio',
+      des: 'My personal website'
+    },
+    {
       title: 'UX Designer Portfolio',
       image: UXPic,
       gif: null,
@@ -47,6 +55,7 @@ function Portfolio() {
       project: 'https://appletri.github.io/knight-travails/',
       des: 'Knight Travils is a project that explores the graph data structure. The app will find a path containing the shortest amount of moves for a knight to move from point A to point B in chess.'
     },
+    
   ]
   return(
     <div className="portfolio">

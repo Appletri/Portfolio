@@ -3,8 +3,7 @@ import './App.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import { useEffect } from 'react';
-import Canvas from './components/Canvas';
+import TechStack from './components/TechStack';
 
 function App() {
 
@@ -16,8 +15,11 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tri's Porfolio</title>
       </Helmet>
-      {/* <Canvas/> */}
-      {/* <AboutMe/> */}
+      <div className='banner-container'>
+        <div className='banner'></div>
+      </div>
+      <AboutMe/>
+      <TechStack/>
       <Portfolio/>
       <Contact/>
     </div>

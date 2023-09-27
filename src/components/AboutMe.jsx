@@ -6,8 +6,8 @@ function AboutMe() {
         <img src={pic} alt="Profile picture of Tri Lam"></img>
       </div>
       <div className="about-section">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus sint totam, voluptates culpa numquam libero nesciunt, explicabo, iure doloribus eos natus? Beatae totam, fugit id labore aspernatur voluptates pariatur?</p>
+        <h1>Hello! My name is Tri Lam</h1>
+        <p>Full-Stack Web Developer</p>
         <div className="links">
           <a href="https://github.com/Appletri" target='_blank'>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
