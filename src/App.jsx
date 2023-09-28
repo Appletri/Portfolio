@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import NavBar from './components/NavBar';
 import Portfolio from './components/Portfolio';
 import TechStack from './components/TechStack';
 
@@ -18,6 +19,7 @@ function App() {
       <div className='banner-container'>
         <div className='banner'></div>
       </div>
+      <NavBar/>
       <AboutMe/>
       <TechStack/>
       <Portfolio/>

@@ -1,6 +1,6 @@
 function TechStack() {
   return(
-    <div className="techstack">
+    <section className="techstack" id="techstack">
       <h1>Tech Stack</h1>
       <div className="techstack-list">
         <div className="techstack-item">
@@ -49,7 +49,7 @@ function TechStack() {
         </div> 
           
       </div>
-    </div>
+    </section>
   )
 
 }

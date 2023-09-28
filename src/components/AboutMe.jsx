@@ -2,7 +2,7 @@ import pic from '../assets/profile.jpg'
 import bg from '../assets/clement-helardot-95YRwf6CNw8-unsplash.jpg'
 function AboutMe() {
   return (
-    <div className="about-me">
+    <section className="about-me" id='about-me' >
       <div className='about-me-bg'>
         <div className='bg-filter'></div>
         <img src={bg} alt="photo of JavaScript in progress by Clement Helardot from Unsplash.com"></img>
@@ -25,7 +25,7 @@ function AboutMe() {
         </div>
       </div>
 
-    </div>
+    </section>
   )
 }
 

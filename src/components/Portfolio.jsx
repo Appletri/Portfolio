@@ -58,7 +58,7 @@ function Portfolio() {
     
   ]
   return(
-    <div className="portfolio">
+    <section className="portfolio" id="portfolio">
       <h1> My Projects </h1>
       <div className="works">
         {portfolio.map((work, index) => {
@@ -68,7 +68,7 @@ function Portfolio() {
         })}
         
       </div>
-    </div>
+    </section>
   )
 }
 

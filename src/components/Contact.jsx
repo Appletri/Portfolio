@@ -3,7 +3,7 @@ import { mdiEmailOutline } from '@mdi/js';
 
 function Contact() {
   return(
-    <div className="contact">
+    <section className="contact" id='contact'>
       <h1>Contact Me</h1>
       <p>Please shoot me an email or message me through linkedin if you want to connect!</p>
       <div className='email'>
@@ -18,7 +18,7 @@ function Contact() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
         </a>
       </div>
-    </div>
+    </section>
   )
 }
 export default Contact
