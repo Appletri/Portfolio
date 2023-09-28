@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 :root {
  /* Colors */
   --main-color: rgb(31, 221, 174);
@@ -45,14 +46,41 @@
 
 /* About Me   */
 .about-me {
-  position: relative;
-  align-self: center;
-  justify-self: center;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 100vw;
-  margin: 2rem;
-  margin-bottom: 30vh;
+  height: 100vh;
+}
+
+.about-me-bg {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  z-index: -3;
+}
+
+.about-me-bg img {
+  width: 100%;
+
+  filter: brightness(20%);
+  transform: translateY(-20%);
+}
+
+.bg-filter {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(rgba(44, 112, 23, 0.445), rgba(0, 0, 0, 0));
+  z-index: 1;
+  
+}
+
+.profile-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile {
@@ -62,22 +90,43 @@
   max-width: 450px;
   height: 450px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+  border-radius: 50%;
+  animation: pulse 1.7s infinite ease-in-out;
 }
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 2px green
+  }
+
+  70% {
+    box-shadow: 0px 0px 40px green
+  }
+
+  100% {
+    box-shadow: 0px 0px 2px green
+  }
+}
+
 
 .profile img {
   position: relative;
-  transform: translate(-32%, -7%)
+  transform: translate(-32%, -7%);
 }
 
 .about-section {
-  background-color: white;
+  /* background-color: white; */
   text-align: left;
-  color: black;
+  color: white;
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 2rem;
   width: 450px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.562); */
+}
+
+.about-section p {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }
 
 .about-me h1 {
@@ -86,8 +135,15 @@
 
 .about-me .links {
   margin-top: 2rem;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
+
+.about-me .links img{
+  filter: invert(100%);
+}
+
 
 /* Tech Stack */
 .techstack h1 {
@@ -101,6 +157,42 @@
   flex-wrap: wrap;
   row-gap: 50px;
   margin-bottom: 50px;
+  font-size: 1.3rem;
+}
+
+.techstack-item img{
+  --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+  width: 250px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+  -webkit-mask: 
+    linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+    100% 100%/250% 250%;
+  transition: .4s;
+  width: 150px;
+  height: 150px;
+}
+
+.techstack-item h3 {
+  --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+  --r: 1,1;
+  border-radius: 20px;
+  transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+  -webkit-mask: 
+    linear-gradient(45deg,#000c 40%,#000,#000c 60%)
+    0 100%/250% 250%;
+  transition: .4s;
+  cursor: default;
+}
+
+.techstack-item img:hover, .techstack-item h3:hover{
+  --i: -1;
+  -webkit-mask-position: 0 0;
+}
+
+.techstack-item h3:hover {
+  -webkit-mask-position: 100% 0;
 }
 
 .techstack-item {
@@ -111,10 +203,6 @@
   gap: 20px;
 }
 
-.techstack-item img {
-  width: 100px;
-  height: 100px;
-}
 #express {
   filter: invert(100%);
 }
