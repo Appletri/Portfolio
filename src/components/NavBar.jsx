@@ -23,10 +23,10 @@ function NavBar() {
   return (
     <div className={Y<height ?"navbar":"navbar-bg"}>
       <div className="navbar-left">
-        <div className="logo">
+        {/* <div className="logo">
           <p>NINE</p>
           <p>20</p>
-        </div>
+        </div> */}
         <p>NINE20_DESIGNS</p>
       </div>
       <div className="navbar-right">

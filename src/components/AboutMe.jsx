@@ -12,7 +12,10 @@ function AboutMe() {
           <img src={pic} alt="Profile picture of Tri Lam"></img>
         </div>
         <div className="about-section">
-          <h1>T R I | L A M</h1>
+          <div className='name'>
+            <h1>T R I</h1>
+            <h1>L A M</h1>
+          </div>
           <p>Full-Stack Dev | Digital Artist | Designer | Tech Enthusiest</p>
           <div className="links">
             <a href="https://github.com/Appletri" target='_blank'>

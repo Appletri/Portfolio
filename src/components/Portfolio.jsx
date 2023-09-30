@@ -4,6 +4,7 @@ import inventoryGif from "../assets/gifs/inventory-app.gif"
 import cvGif from "../assets/gifs/cv-application.gif"
 import UXPic from "../assets/UX.png"
 import chessPic from "../assets/chess.png"
+import PortfolioPic from "../assets/portfolio.png"
 
 function Portfolio() {
   const portfolio = [
@@ -33,7 +34,7 @@ function Portfolio() {
     },
     {
       title: 'Personal Website',
-      image: UXPic,
+      image: PortfolioPic,
       gif: null,
       github: null,
       project: 'https://github.com/Appletri/Portfolio',
