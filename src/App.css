@@ -5,7 +5,6 @@
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -120,7 +119,7 @@
 .about-me-bg {
   position: absolute;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   z-index: -3;
   overflow: hidden;
 }
@@ -146,6 +145,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .profile {
@@ -179,18 +179,13 @@
 }
 
 .about-section {
-  /* background-color: white; */
   text-align: left;
   color: white;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding: 2rem;
   width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 200px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.562); */
 }
 
 .about-section p {
@@ -217,16 +212,20 @@
 .about-me .links img{
   filter: invert(100%);
   margin: 0px;
+  width: 40px;
+  height: 40px;
 }
 
 
 /* Tech Stack */
 .techstack {
   min-height: 100vh;
+  max-width: 1280px;
 }
 .techstack h1 {
   font-size: 2rem;
   margin-bottom: 50px;
+  margin-top: 100px;
 }
 .techstack-list {
   display: flex;
@@ -291,11 +290,13 @@
   text-align: left;
   width: 100%;
   min-height: 100vh;
+  max-width: 1280px;
 }
 
 .portfolio h1 {
   margin-left: 30px;
   font-size: 2rem;
+  margin-top: 100px;
 }
 
 .works {
@@ -365,10 +366,13 @@
 
 .contact {
   background-color: var(--main-color);
-  width: 100%;
-  height: auto;
+  width: 100vw;
   padding-bottom: 5rem;
   padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact h1 {
@@ -385,4 +389,71 @@
 .contact img {
   width: 50px;
   height: 50px;
+}
+
+.contact .links {
+  filter: invert(100%);
+}
+
+/* Phone and tablet support */
+
+@media only screen and (max-width:1000px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .profile {
+    margin-top: 0px;
+    transform: scale(.7);
+  }
+  .about-section {
+    align-items: center;
+  }
+  .about-section p{
+    width: 80vw;
+    text-align: center;
+  }
+  .about-me .links {
+    width: auto;  
+  }
+
+  .techstack-item {
+    flex-direction: column;
+  }
+
+  .techstack-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .techstack-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .works {
+    grid-template-columns: 1fr ;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .work h2 {
+    font-size: 1.3rem;
+  }
+  
+  .work p {
+    font-size: 1rem;
+  }
+
+  .navbar-bg {
+    transform: translateY(-60px);
+  }
+
+}
+
+@media only screen and (min-width:1450px) {
+  .about-me-bg img {
+    min-width: 100vw;
+    max-height: 200vh;
+    filter: brightness(20%);
+  }
 }
