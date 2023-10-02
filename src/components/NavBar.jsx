@@ -3,9 +3,9 @@ import { useState } from "react";
 
 function NavBar() {
   const [Y, setY] = useState(0);
-  const [X, setX] = useState(true);
+  const [X, setX] = useState(screen.width);
   let height = screen.height * .7;
-  let width = true;
+  let width = screen.width;
   
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -13,19 +13,16 @@ function NavBar() {
   };
 
   const handleResize = () => {
-    if (screen.width < 1000) {
-      setX(false);
-    } else {
-      setX(true);
-    }
+    const width = screen.width
+    setX(width);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', handleResize);
     return () => {
         window.removeEventListener('scroll', handleScroll);
-        window.removeEventListener('resize', handleResize)
+        window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -36,9 +33,9 @@ function NavBar() {
           <p>NINE</p>
           <p>20</p>
         </div> */}
-        <p>NINE20_DESIGNS</p>
+        <p>TRI DUC LAM</p>
       </div>
-      {!X ? null : 
+      {width < 671 ? null : 
       <div className="navbar-right">
         <a className="nav-link" href="#about-me">ABOUT</a>
         <a className="nav-link" href="#techstack">TECH STACK</a>

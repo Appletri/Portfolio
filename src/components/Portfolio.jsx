@@ -9,7 +9,7 @@ import PortfolioPic from "../assets/portfolio.png"
 function Portfolio() {
   const portfolio = [
     {
-      title: 'SWUVSA E-Commerse Website',
+      title: 'SWUVSA Shop Website',
       image: 'https://raw.githubusercontent.com/Appletri/shopping-cart/main/src/assets/SWUVSA_Logo.png',
       gif: shopGif,
       github: 'https://github.com/Appletri/shopping-cart',
@@ -36,8 +36,8 @@ function Portfolio() {
       title: 'Personal Website',
       image: PortfolioPic,
       gif: null,
-      github: null,
-      project: 'https://github.com/Appletri/Portfolio',
+      github: 'https://github.com/Appletri/Portfolio',
+      project: 'https://www.triduclam.com',
       des: 'My personal website'
     },
     {

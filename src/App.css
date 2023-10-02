@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  user-select: none;
 }
 
 .logo {
@@ -287,14 +288,13 @@
 /* Portfolio */
 
 .portfolio {
-  text-align: left;
   width: 100%;
   min-height: 100vh;
   max-width: 1280px;
 }
 
 .portfolio h1 {
-  margin-left: 30px;
+  text-align: center;
   font-size: 2rem;
   margin-top: 100px;
 }
@@ -308,6 +308,7 @@
 }
 
 .work {
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -350,11 +351,11 @@
 }
 
 .work h2 {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .work p {
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 .header img {
