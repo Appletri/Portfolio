@@ -1,10 +1,11 @@
 import { Helmet } from 'react-helmet';
 import './App.css';
-import AboutMe from './components/AboutMe';
+import Hero from './components/Hero';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import Portfolio from './components/Portfolio';
 import TechStack from './components/TechStack';
+import About from './components/About';
 
 function App() {
 
@@ -16,11 +17,9 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tri's Porfolio</title>
       </Helmet>
-      <div className='banner-container'>
-        <div className='banner'></div>
-      </div>
       <NavBar/>
-      <AboutMe/>
+      <Hero/>
+      <About/>
       <TechStack/>
       <Portfolio/>
       <Contact/>

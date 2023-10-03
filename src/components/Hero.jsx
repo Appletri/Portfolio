@@ -1,6 +1,6 @@
 import pic from '../assets/profile.jpg'
 import bg from '../assets/clement-helardot-95YRwf6CNw8-unsplash.jpg'
-function AboutMe() {
+function Hero() {
   return (
     <section className="about-me" id='about-me' >
       <div className='about-me-bg'>
@@ -32,4 +32,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe;
+export default Hero;
