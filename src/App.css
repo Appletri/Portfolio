@@ -88,7 +88,7 @@
   color: white;
 }
 
-/* About Me   */
+/* Hero   */
 .about-me {
   display: flex;
   justify-content: center;
@@ -356,6 +356,14 @@
   height: 25px;
 }
 
+.demoreel-header{
+  margin-top: 5rem;
+}
+
+.demoreel {
+  margin-bottom: 10rem;
+}
+
 /* Contact */
 
 .contact {
@@ -449,5 +457,11 @@
     min-width: 100vw;
     max-height: 200vh;
     filter: brightness(20%);
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .demoreel {
+    width: 300px;
   }
 }
