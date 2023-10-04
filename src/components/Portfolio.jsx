@@ -49,12 +49,12 @@ function Portfolio() {
       des: 'This is a UX designer portfolio built with ReactJS.'
     },
     {
-      title: 'Knight Travils',
-      image: chessPic,
+      title: 'PhotoTag',
+      image: 'https://raw.githubusercontent.com/Appletri/Appletri/main/assets/photo-tag.JPG',
       gif: null,
-      github: 'https://github.com/Appletri/knight-travails',
-      project: 'https://appletri.github.io/knight-travails/',
-      des: 'Knight Travils is a project that explores the graph data structure. The app will find a path containing the shortest amount of moves for a knight to move from point A to point B in chess.'
+      github: 'https://github.com/Appletri/photo-tag',
+      project: 'https://appletri.github.io/photo-tag/',
+      des: 'Photo Tag is an engaging full-stack project that seamlessly integrates a Firebase database with a dynamic React front end. In this interactive experience, users immerse themselves in a thrilling "Where is Waldo" challenge, searching for three designated targets within the picture.'
     },
     
   ]
