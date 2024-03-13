@@ -49,6 +49,14 @@ function Portfolio() {
       des: 'This is a UX designer portfolio built with ReactJS.'
     },
     {
+      title: 'American Dog Society',
+      image: 'https://raw.githubusercontent.com/Appletri/Appletri/main/assets/AmericanDogSocietyWebsitePhoto.png',
+      gif: null,
+      github: null,
+      project: 'https://americandogsociety.com/',
+      des: 'Working in the development of a comprehensive educational platform targeting dog owners, covering topics such as training, health care, and responsible ownership. Implemented interactive features to engage users and ensure an enjoyable learning experience. Managing ongoing updates and maintenance tasks for the current website.'
+    },
+    {
       title: 'PhotoTag',
       image: 'https://raw.githubusercontent.com/Appletri/Appletri/main/assets/photo-tag.JPG',
       gif: null,
