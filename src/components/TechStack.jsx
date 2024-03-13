@@ -47,7 +47,10 @@ function TechStack() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
           <h3>Firebase</h3>
         </div> 
-          
+        <div className="techstack-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
+          <h3>Wordpress</h3>
+        </div>   
       </div>
     </section>
   )
