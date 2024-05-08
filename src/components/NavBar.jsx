@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import logo from '../assets/TL Logo.png'
 
 function NavBar() {
   const [Y, setY] = useState(0);
@@ -29,10 +30,9 @@ function NavBar() {
   return (
     <div className={Y<height ?"navbar":"navbar-bg"}>
       <div className="navbar-left">
-        {/* <div className="logo">
-          <p>NINE</p>
-          <p>20</p>
-        </div> */}
+        <div className="logo">
+          <img src={logo} alt={"logo"}/>
+        </div>
         <p>TRI DUC LAM</p>
       </div>
       {width < 671 ? null : 

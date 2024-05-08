@@ -15,7 +15,7 @@ function App() {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tri's Porfolio</title>
+        <title>Tri Lam</title>
       </Helmet>
       <NavBar/>
       <Hero/>

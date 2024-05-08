@@ -54,7 +54,11 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.logo p:first-child {
+.logo img {
+  width: 2rem;
+}
+
+/* .logo p:first-child {
   background-color: white;
   color: black;
   border-top-left-radius: 15%;
@@ -67,7 +71,7 @@
   border-top-right-radius: 15%;
   border-bottom-right-radius: 15%;
   padding: 2px 8px 2px 3px;
-}
+} */
 
 .navbar-right {
   display: flex;
